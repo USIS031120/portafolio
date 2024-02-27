@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto:wght@300;400;700&display=swap');
+
+header {
+  height: 100vh;
+}
+
+header .menu {
+  /* background: #1f1f1f; */
+  padding: 30px;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); */
+}
+
+body {
+  background: #252525;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Jockey One', sans-serif;
+}
+
+header .menu ul {
+  list-style: none;
+  margin: 0;
+  text-align: right;
+  padding: 0px;
+}
+
+header .menu ul li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 56px;
+}
+
+.hero h2 {
+  font-size: 48px;
+}
+
+.hero {
+  height: calc(100vh - 84px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero .azul {
+  color: #6c75c5;
+}
+
+header .contenedor-titulo {
+  margin: 80px;
+}
+
+header .container-fluid {
+  padding: 0;
+  /* height: 100%; */
+}
+
+.grafica {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 10px solid #fff; */
+  transform: rotate(162deg);
+  background: linear-gradient(0deg, #fff 50%, rgba(255, 255, 255, 0.2) 50%);
+  /* border-width: 10px 0px 0px 0px; */
+}
+
+.grafica::after {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "90%";
+  text-align: center;
+  line-height: 80px;
+  background: #000;
+  z-index: 2;
+  border-radius: 50%;
+  background: linear-gradient(transparent 50%, #252525 50%);
+  transform: rotate(-162deg) scale(1.1);
+}
+
+.titulo {
+  margin: 40px 0px;
+}
+
+.grafica::before {
+  width: 80px;
+  height: 80px;
+  background: #252525;
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  transform: rotate(-162deg);
+}
+
+.grafica.css,
+.grafica.js,
+.grafica.jquery,
+.grafica.nodejs {
+  transform: rotate(144deg);
+}
+
+.grafica.css::before,
+.grafica.js::before,
+.grafica.jquery::before,
+.grafica.nodejs::before {
+  transform: rotate(-144deg);
+}
+
+.grafica.css::after,
+.grafica.js::after,
+.grafica.jquery::after,
+.grafica.nodejs::after {
+  transform: rotate(-144deg) scale(1.1);
+  content: "80%";
+}
+
+.skills p {
+  margin-right: 60px;
+  font-size: 22px;
+  font-family: 'Jockey One', sans-serif;
+}
+
+.skills h2 {
+  font-size: 32px;
+}
+
+.grafica.b,
+.grafica.mysql {
+  transform: rotate(153deg);
+}
+
+.grafica.b::before,
+.grafica.mysql::before {
+  transform: rotate(-153deg);
+}
+
+.grafica.b::after,
+.grafica.mysql::after {
+  transform: rotate(-153deg) scale(1.1);
+  content: "85%";
+}
+
+.grafica.html {
+  background: linear-gradient(0deg, #3138a7 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.html {
+  color: #3138a7;
+}
+
+.grafica.css {
+  background: linear-gradient(0deg, #a73131 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.css {
+  color: #a73131;
+}
+
+.grafica.js {
+  background: linear-gradient(0deg, #6831a7 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.js {
+  color: #6831a7;
+}
+
+.grafica.b {
+  background: linear-gradient(0deg, #e2bc52 50%, rgba(255, 255, 255, 0.2) 50%);
+  color: #e2bc52;
+}
+
+.bootstrap {
+  color: #e2bc52;
+}
+
+.grafica.jquery {
+  background: linear-gradient(0deg, #a24eda 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.jquery {
+  color: #a24eda;
+}
+
+.grafica.mysql {
+  background: linear-gradient(0deg, #92da4e 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.mysql {
+  color: #92da4e;
+}
+
+.grafica.nodejs {
+  background: linear-gradient(0deg, #574eda 50%, rgba(255, 255, 255, 0.2) 50%);
+}
+
+.nodejs {
+  color: #574eda;
+}
+
+.container-sk > div {
+  width: auto;
+  margin: 30px;
+}
+
+.portfolio {
+  margin: 40px 0px;
+}
+
+.titulo-proyectos {
+  font-size: 32px;
+}
+
+.portfolio img {
+  width: 100%;
+}
+
+footer p {
+   color: #fff;
+   margin: 0px;
+}
+
+footer {
+  padding: 20px;
+  background: #464646;
+}
